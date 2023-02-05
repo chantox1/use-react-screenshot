@@ -21,8 +21,8 @@
     "docs": "npx jsdoc --readme ./README.md --destination ./docs src/"
   },
   "peerDependencies": {
-    "react": ">=17.0.2",
-    "html2canvas": "^1.3.3"
+    "html2canvas": "^1.3.3",
+    "react": ">=17.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
@@ -48,9 +48,9 @@
     "@testing-library/react-hooks": "^3.2.1",
     "babel-eslint": "^10.0.1",
     "cross-env": "^5.2.0",
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb-base": "^14.1.0",
-    "eslint-plugin-import": "^2.20.1",
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.2",
     "gh-pages": "^2.0.1",
     "html2canvas": "^1.3.3",
     "react": "^17.0.2",
