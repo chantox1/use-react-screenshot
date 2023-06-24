@@ -27,6 +27,7 @@ const useScreenshot = ({ type, quality, options } = {}) => {
     }
     return html2canvas(node, options)
       .then((canvas) => {
+        console.log("Taking screenshot with options ", JSON.stringify(options))
         const croppedCanvas = document.createElement('canvas')
         const croppedCanvasContext = croppedCanvas.getContext('2d')
         // init data
