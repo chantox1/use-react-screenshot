@@ -14,7 +14,7 @@ import html2canvas from 'html2canvas'
  * hook for creating screenshot from html node
  * @returns {HookReturn}
  */
-const useScreenshot = ({ type, quality, scale = 1 } = {}) => {
+const useScreenshot = ({ type, quality, options } = {}) => {
   const [image, setImage] = useState(null)
   const [error, setError] = useState(null)
   /**
@@ -25,7 +25,7 @@ const useScreenshot = ({ type, quality, scale = 1 } = {}) => {
     if (!node) {
       throw new Error('You should provide correct html node.')
     }
-    return html2canvas(node, { scale: (window.devicePixelRatio * scale) })
+    return html2canvas(node, options)
       .then((canvas) => {
         const croppedCanvas = document.createElement('canvas')
         const croppedCanvasContext = croppedCanvas.getContext('2d')
